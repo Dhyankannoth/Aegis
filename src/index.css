@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-deep: #000000;
+  --bg-exam-header: #0d1b2a;
+  --bg-exam-sidebar: #f8f9fa;
+  --bg-exam-main: #f0f2f5;
+  --text-exam-main: #1a1a1a;
+  --text-exam-muted: #6c757d;
+  --primary: #1b263b;
+  --secondary: #415a77;
+  --accent-orange: #f39c12;
+  --status-completed: #1b263b;
+  --status-flagged: #f39c12;
+  --status-unvisited: #e9ecef;
+
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color-scheme: dark;
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: black;
+}
+
+.spline-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.content-layer {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+h1,
+h2,
+h3,
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: white;
+}
+
+/* Glassmorphism subtle */
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}

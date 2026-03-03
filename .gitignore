@@ -1,0 +1,62 @@
+# Node.js
+node_modules/
+**/node_modules/
+dist/
+dist-ssr/
+*.log
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+venv/
+**/venv/
+**/ENV/
+**/env/
+
+# AI Models & Large Binary Files
+*.zip
+*.pb
+*.h5
+*.weights
+*.tflite
+*.onnx
+*.dat
+*.model
+*.caffemodel
+*.bin
+*.mp4
+*.avi
+*.mov
+
+# Model data directories (large)
+ai/coco models/
+ai/eye_tracking/
+ai/face_detection/
+coco models/
+eye_tracking/
+face_detection/
+
+# Environment variables
+.env
+.env.*
+*.local
+
+# Artifacts, logs, docs
+init_log.txt
+*.pdf
+*.docx
+*.txt
+!README.md
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
